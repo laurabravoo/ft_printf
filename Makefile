@@ -1,7 +1,7 @@
 CC = cc
 SRC = ft_printf.c ft_printf_utils.c
 OBJ = ft_printf.o ft_printf_utils.o 
-NAME = libprint.a
+NAME = libftprintf.a
 
 all: $(NAME)
 
@@ -16,7 +16,8 @@ clean:
 
 fclean: clean
 	@rm -f $(Name)
-	@rm a
+
+re: fclean all
 
 run:
-	@$(CC) ft_printf.c  -L. -lprint -o a
+	$(CC) ft_printf.c -L. -lftprintf
